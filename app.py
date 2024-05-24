@@ -28,7 +28,7 @@ if hist_button: # al hacer clic en el botón
     st.write('Venta de coches')
             
      # crear un histograma
-    fig = px.show(car_data, x="odometer")
+    fig = px.scatter(car_data, x="odometer")
         
      # mostrar un gráfico Plotly interactivo
     st.plotly_chart(fig, use_container_width=True)
